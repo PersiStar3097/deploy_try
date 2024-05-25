@@ -47,7 +47,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.GITHUB_PAGES),
+  history: createWebHistory('/deploy_try/'),
   routes
 })
 
