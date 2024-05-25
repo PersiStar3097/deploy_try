@@ -39,7 +39,7 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn variant="tonal" color="deep-purple-accent-4" @click = "auth_login">
-                  {{ "Logind" }}
+                  {{ "Login" }}
                 </v-btn>
     
               </v-card-actions>

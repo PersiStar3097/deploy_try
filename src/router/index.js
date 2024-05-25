@@ -4,6 +4,15 @@ import Login from '../views/Login.vue'
 import Check_symptoms from '../views/CheckSymptoms.vue'
 import Growth_Curve from '../views/GrowthCurve.vue'
 import Document from '../views/Document.vue'
+import { START_LOCATION } from 'vue-router'
+
+function denyDirectAccess(to, from) {
+  if(from === START_LOCATION){
+    return '/'
+  }
+}
+  
+
 
 const routes = [
   // {
@@ -19,22 +28,31 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: Home
+    component: Home,
+    beforeEnter: denyDirectAccess
   },
   {
     path: '/check',
     name: 'check',
-    component: Check_symptoms
+    component: Check_symptoms,
+    beforeEnter: denyDirectAccess
+
   },
   {
     path: '/growth',
     name: 'growth',
-    component: Growth_Curve
+    component: Growth_Curve,
+    beforeEnter: denyDirectAccess
+
   },
   {
     path: '/doc',
     name: 'doc',
-    component: Document
+    component: Document,
+    beforeEnter: denyDirectAccess
+
+
+    
   },
   // {
   //   path: '/about',
