@@ -10,6 +10,7 @@ export default defineConfig({
   base: process.env.GITHUB_PAGES  // この行を追加
         ? "deploy_try"            // この行を追加
         : "./",
+  assetsDir:'./',
   plugins: [
     vue(),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
