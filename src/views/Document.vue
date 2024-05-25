@@ -64,7 +64,7 @@
         },
     methods:{
         hoge(){
-            window.open('../document_PDF/test.pdf','_blank') // publicのPDFをブラウザ別タブで表示させる
+            window.open('/deploy_try/document_PDF/test.pdf','_blank') // publicのPDFをブラウザ別タブで表示させる
         }
     }
   }
