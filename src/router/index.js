@@ -8,7 +8,7 @@ import { START_LOCATION } from 'vue-router'
 
 function denyDirectAccess(to, from) {
   if(from === START_LOCATION){
-    return '/'
+    return '/deploy_try/'
   }
 }
   
