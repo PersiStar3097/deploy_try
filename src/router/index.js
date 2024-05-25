@@ -8,7 +8,7 @@ import { START_LOCATION } from 'vue-router'
 
 function denyDirectAccess(to, from) {
   if(from === START_LOCATION){
-    return '/deploy_try/'
+    return '/'
   }
 }
   
@@ -29,27 +29,27 @@ const routes = [
     path: '/home',
     name: 'home',
     component: Home,
-    beforeEnter: denyDirectAccess
+    // beforeEnter: denyDirectAccess
   },
   {
     path: '/check',
     name: 'check',
     component: Check_symptoms,
-    beforeEnter: denyDirectAccess
+    // beforeEnter: denyDirectAccess
 
   },
   {
     path: '/growth',
     name: 'growth',
     component: Growth_Curve,
-    beforeEnter: denyDirectAccess
+    // beforeEnter: denyDirectAccess
 
   },
   {
     path: '/doc',
     name: 'doc',
     component: Document,
-    beforeEnter: denyDirectAccess
+    // beforeEnter: denyDirectAccess
 
 
     

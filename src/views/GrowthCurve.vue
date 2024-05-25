@@ -30,7 +30,7 @@
         <p class="py-3"></p>
         <p class="text-h2">Growth Curve</p>
         <p class="py-3"></p>
-        <p class="text-h5">生後・体重・身長と成長曲線を照らし合わせます</p>
+        <p class="text-h5">生後・体重・身長を入力して成長曲線と照らし合わせます</p>
         <p class="py-2"></p>
         <p class="mx-12"><v-divider thickness="5"></v-divider></p>
         <p class="py-3"></p>
@@ -243,10 +243,18 @@
                     <p class="py-12"></p><v-btn color="blue-lighten-2" variant="outlined" @click="btnflag_reslt='true'" style="width: 50px;">OPEN!</v-btn>
                 </p>
                 <p v-if="btnflag_reslt==='true'">
-                <h1 class="py-8">{{baby_growth}}</h1>
-                <h4 class="py-2">
-                    <div class="d-flex flex-row justify-space-around"><p>{{ growth_result_height }}</p><p>{{ growth_result_weight }}</p></div></h4>
-                <p class="py-8"></p><v-btn color="blue-lighten-2" variant="outlined" @click="btnflag_reslt='false';btnflag='false'" style="width: 50px;">CLOSE</v-btn>
+                <v-card  width="350px" height="100px" class="mx-auto mt-5 rounded-xl" variant="outlined">
+                    <h1 class="py-6">{{baby_growth}}</h1>
+                </v-card>
+                    <p class="py-3"></p>
+                    <h4 class="px-12">
+                    <!-- <div class="d-flex flex-row justify-space-around"><p>{{ growth_result_height }}</p><p>{{ growth_result_weight }}</p></div></h4> -->
+                    <div class="text-right" >
+                        <p class="text-indigo">{{ growth_result_height }}</p>
+                        <p class="text-indigo">{{ growth_result_weight }}</p>
+                    </div>
+                </h4>
+                <p class="py-5"></p><v-btn color="blue-lighten-2" variant="outlined" @click="btnflag_reslt='false';btnflag='false'" style="width: 50px;">CLOSE</v-btn>
 
                 </p>
 
