@@ -6,10 +6,10 @@ const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: process.env.NODE_ENV === 'production' ? '/deploy_try/' : './',
-  base: process.env.GITHUB_PAGES  // この行を追加
-        ? "/deploy_try/"            // この行を追加
-        : "./",
+  base: process.env.NODE_ENV === 'production' ? '/docs/' : './',
+  // base: process.env.GITHUB_PAGES  // この行を追加
+  //       ? "/deploy_try/"            // この行を追加
+  //       : "./",
   assetsDir:'./',
   plugins: [
     vue(),
