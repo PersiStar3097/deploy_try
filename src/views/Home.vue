@@ -27,12 +27,19 @@
 
         </v-app-bar>
         <v-main>
+        <p class="py-3"></p>
+
+        <p class="text-h2">App Introduction</p>
+                
+        <p class="py-3"></p>
         <p class="py-2"></p>
-
-            <p class="text-h1">Main Contents
-
-            </p>
-            <v-btn @click = "hoge">button</v-btn>
+        <p class="mx-12"><v-divider thickness="5"></v-divider></p>
+        <p>どんなアプリ？</p>
+        <v-container>
+            <v-list>
+                <v-list-item title=""></v-list-item>
+            </v-list>
+        </v-container>
             <!-- <router-view /> -->
         </v-main>
         <v-navigation-drawer v-model="drawer" :width="300">
